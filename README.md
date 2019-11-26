@@ -26,6 +26,8 @@ DB_DATABASE=
 
 ## Rodando a aplicação
 npm install
+
+
 npm start
 
 
