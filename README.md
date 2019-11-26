@@ -1,25 +1,27 @@
 # Api_Voos
 Trabalho da disciplina de Sistemas distribuidos
 
-##Banco de dados
+## Banco de dados
 voos.db
 
-##Variaveis de ambiente
+## Variaveis de ambiente
 .env
 
 DB_HOST=localhost
+&nbsp;
 DB_PORT=5432
+&nbsp;
 DB_USER=
 DB_PASSWORD=
 DB_DATABASE=
 
 
-##Rodando a aplicação
+## Rodando a aplicação
 npm install
 npm start
 
 
-##Rotas
+## Rotas
 
 get('/voo/:origem/:destino')
 get('/voo/:origem/:destino/:dataPartida')
