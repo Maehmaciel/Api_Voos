@@ -8,10 +8,16 @@ voos.db
 .env
 
 DB_HOST=localhost
+
+
 &nbsp;
 DB_PORT=5432
+
+
 &nbsp;
 DB_USER=
+
+
 DB_PASSWORD=
 DB_DATABASE=
 
