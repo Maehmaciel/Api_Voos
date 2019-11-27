@@ -14,26 +14,26 @@ DB_HOST=localhost
 DB_PORT=5432
 
 
-// usuario do Banco
+#### usuario do Banco
 
 DB_USER=
 
 
-// senha do Banco
+#### senha do Banco
 
 DB_PASSWORD=
 
 
-// nome do Banco
+#### nome do Banco
 
 DB_DATABASE=
 
 
 ## Rodando a aplicação
-// instala as dependencias, (node_modules)
+#### instala as dependencias, (node_modules)
 npm install
 
-//inicia o servidor
+#### inicia o servidor
 npm start
 
 
