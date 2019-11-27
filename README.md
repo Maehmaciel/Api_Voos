@@ -15,12 +15,17 @@ DB_PORT=5432
 
 
 // usuario do Banco
+
 DB_USER=
 
+
 // senha do Banco
+
 DB_PASSWORD=
 
+
 // nome do Banco
+
 DB_DATABASE=
 
 
@@ -36,11 +41,17 @@ npm start
 
 get('/voo/:origem/:destino')
 
+Ex: localhost:3003/voo/São Paulo/Manaus
+
 
 get('/voo/:origem/:destino/:dataPartida')
 
+Ex: localhost:3003/voo/Palmas/Brasília/2019-06-22
+
 
 get('/voo/:origem/:destino/:dataPartida/:preco')
+
+Ex: localhost:3003/voo/São Paulo/Manaus/2019-11-12/350
 
 
 post('/reserva')
