@@ -55,9 +55,11 @@ Ex: localhost:3003/voo/São Paulo/Manaus/2019-11-12/350
 
 
 post('/reserva')
-
+Ex:
+<img src="post_ex.png">
 
 put('/reserva/:reserva')
-
+Ex:
+<img src="put_ex.png">
 
 delete('/reserva/:reserva')
