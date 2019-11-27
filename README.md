@@ -68,4 +68,4 @@ Ex:
 
 ##### delete('/reserva/:reserva')
 
-Ex: localhost:3003/1
+Ex: localhost:3003/reserva/1
