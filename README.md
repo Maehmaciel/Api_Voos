@@ -39,31 +39,33 @@ npm start
 
 ## Rotas
 
-get('/voo/:origem/:destino')
+##### get('/voo/:origem/:destino')
 
 Ex: localhost:3003/voo/São Paulo/Manaus
 
 
-get('/voo/:origem/:destino/:dataPartida')
+##### get('/voo/:origem/:destino/:dataPartida')
 
 Ex: localhost:3003/voo/Palmas/Brasília/2019-06-22
 
 
-get('/voo/:origem/:destino/:dataPartida/:preco')
+##### get('/voo/:origem/:destino/:dataPartida/:preco')
 
 Ex: localhost:3003/voo/São Paulo/Manaus/2019-11-12/350
 
 
-post('/reserva')
+##### post('/reserva')
 
 Ex:
 
 <img src="post_ex.png">
 
-put('/reserva/:reserva')
+##### put('/reserva/:reserva')
 
 Ex:
 
 <img src="put_ex.png">
 
-delete('/reserva/:reserva')
+##### delete('/reserva/:reserva')
+
+Ex: localhost:3003/1
