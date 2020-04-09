@@ -10,6 +10,10 @@ const bodyParser =require('body-parser')
 app.use(express.json())
 app.use(express.urlencoded({extended : true}))
 app.use(cors())
+app.get('/', function(req, res) {
+  res.send('hello world');
+});
+
 app.get('/voo/:origem/:destino',db.getVoosOD)
 app.get('/voo/:origem/:destino/:dataPartida',db.getVoosODDp)
 app.get('/voo/:origem/:destino/:dataPartida/:preco',db.getVoosODDpP)
