@@ -1,19 +1,19 @@
-const porta=3003
+require('dotenv').config()
 const http= require('http')
 const express =require('express')
 const db = require('./query')
+
+const path = require('path')
+const cors = require('cors')
 let app = express();
 const bodyParser =require('body-parser')
-app.use(bodyParser.json())
-
+app.use(express.json())
+app.use(express.urlencoded({extended : true}))
+app.use(cors())
 app.get('/voo/:origem/:destino',db.getVoosOD)
 app.get('/voo/:origem/:destino/:dataPartida',db.getVoosODDp)
 app.get('/voo/:origem/:destino/:dataPartida/:preco',db.getVoosODDpP)
 app.post('/reserva',db.cadReservaVoos)
 app.put('/reserva/:reserva',db.updateReservaVoos)
 app.delete('/reserva/:reserva',db.deleteReservaVoos)
-
-http.createServer(app).listen(porta, () => {
-   
-console.log('Porta:'+porta)
-})
+app.listen(3003)
