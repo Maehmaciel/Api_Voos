@@ -12,7 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended : true}))
 app.use(cors())
 app.get('/', function(req, res) {
-  res.send('hello world');
+  res.json({"a":"hello world"});
 });
 
 app.get('/voo/:origem/:destino',db.getVoosOD)
