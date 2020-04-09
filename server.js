@@ -15,10 +15,13 @@ app.get('/', function(req, res) {
   res.json({"a":"hello world"});
 });
 
-app.get('/voo/:origem/:destino',db.getVoosOD)
-app.get('/voo/:origem/:destino/:dataPartida',db.getVoosODDp)
-app.get('/voo/:origem/:destino/:dataPartida/:preco',db.getVoosODDpP)
-app.post('/reserva',db.cadReservaVoos)
+app.get('/pedidos',db.getVoosOD)
+app.get('/pedidos/:cod',db.getVoosODDp)
+app.get('/caminhoes',db.getVoosODDpP)
+app.post('/login',db.cadReservaVoos)
+app.post('/cadCaminhao',db.cadReservaVoos)
+app.post('/cadUser',db.cadReservaVoos)
+app.post('/pedido',db.cadReservaVoos)
 app.put('/reserva/:reserva',db.updateReservaVoos)
 app.delete('/reserva/:reserva',db.deleteReservaVoos)
 app.listen(porta)
