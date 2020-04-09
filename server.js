@@ -1,4 +1,5 @@
 require('dotenv').config()
+var porta = process.env.PORT || 8080;
 const http= require('http')
 const express =require('express')
 const db = require('./query')
@@ -20,4 +21,4 @@ app.get('/voo/:origem/:destino/:dataPartida/:preco',db.getVoosODDpP)
 app.post('/reserva',db.cadReservaVoos)
 app.put('/reserva/:reserva',db.updateReservaVoos)
 app.delete('/reserva/:reserva',db.deleteReservaVoos)
-app.listen(process.env.PORT)
+app.listen(porta)
