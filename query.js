@@ -1,11 +1,11 @@
 require('dotenv').config()
 const Pool = require('pg').Pool
 const pool = new Pool({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_DATABASE,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+  user: process.env.DB_USER || 'qwplkisj',
+  host: process.env.DB_HOST || 'drona.db.elephantsql.com',
+  database: process.env.DB_DATABASE || 'qwplkisj',
+  password: process.env.DB_PASSWORD || 'DBRxXEX5d1vZMAtznyXPidpDNLXlEHto',
+  port: process.env.DB_PORT || 5432,
 })
 
 const getVoosOD= (request, response) => {
